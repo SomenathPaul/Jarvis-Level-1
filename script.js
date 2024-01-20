@@ -11,8 +11,7 @@ function speak(text) {
 
   window.speechSynthesis.speak(text_speak);
 }
-// user promt
-const user = prompt("Enter your name: ");
+const user = "sir";
 
 function wishMe() {
   var day = new Date();
@@ -21,7 +20,7 @@ function wishMe() {
   if (hour >= 0 && hour < 12) {
     speak("Good Morning Boss...");
   } else if (hour > 12 && hour < 17) {
-    speak("Good Afternoon." + user);
+    speak("Good Afternoon master...");
   } else {
     speak("Good Evening" + user);
   }
@@ -64,6 +63,13 @@ function takeCommand(message) {
     message.includes("wait for a second jarvis")
   ) {
     speak("okay" + user + " i'll waiting");
+  } else if (
+    message.includes("how are you") ||
+    message.includes("what is going on jarvis") ||
+    message.includes("how are you jarvis") ||
+    message.includes("what's up")
+  ) {
+    speak("i'm great" + user + ". how about you?");
   } else if (
     message.includes("who are you") ||
     message.includes("tell me about yourself") ||
