@@ -4,9 +4,10 @@ const content = document.querySelector(".content");
 function speak(text) {
   const text_speak = new SpeechSynthesisUtterance(text);
 
-  text_speak.rate = 1;
+  text_speak.rate = 1.7;
   text_speak.volume = 1;
   text_speak.pitch = 1;
+  text_speak.lang = "en-HI";
 
   window.speechSynthesis.speak(text_speak);
 }
