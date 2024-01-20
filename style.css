@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    background-color: #050726;
+}
+.input {
+    height: 100vh;
+    width: 100vw;
+    background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content {
+    color: #fff;
+    background: transparent;
+}
+.mid-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+.talk {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: none;
+    background: #00f2ff;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+.talk:hover {
+    box-shadow: 0 0 50px #00f2ff;
+}
+.talk:hover:active {
+    background: #ff8c00;
+    box-shadow: 0 0 30px #ff8c00;
+}
+.fa-microphone {
+    background: transparent;
+}
